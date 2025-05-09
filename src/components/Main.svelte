@@ -2,9 +2,9 @@
    import Step from "./Step.svelte";
 
    let steps =[
-      {name: 'Workshops', icon: 'fa-solid fa-dumbbell'},
-      {name: 'Community', icon: 'fa-solid fa-people-group'},
-      {name: 'Services', icon: 'fa-solid fa-toolbox'},
+      {name: 'Workshops', icon: 'fa-solid fa-dumbbell', src: 'img1.webp'},
+      {name: 'Community', icon: 'fa-solid fa-people-group',src: 'img2.webp'},
+      {name: 'Services', icon: 'fa-solid fa-toolbox', src: 'img3.webp'},
    ]
 
 </script>
@@ -16,12 +16,17 @@
 
          <p class="text-base sm:text-lg md:text-xl">We help members develop, connect and have a voice. With a member base of over 7,500 businesses and marketing professionals, we connect and engage with over 10,000 people every week</p>
 
-         <a href="https://marketing.org.nz/contact-us" target="_blank" class="redShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative overflow-hidden px-4 py-2 group rounded-full bg-white text-red-600">
-            <div class="absolute top-0 right-full w-full h-full bg-red-500 opacity-25 group-hover:translate-x-full z-0 duration-400">
-            </div>
-            <h4 class="relative z-9">&rarr; Join us now!  &larr;</h4>
-         </a>
+         <div class="flex items-center gap-2 w-full max-w-md mx-auto lg:mx-0">
 
+            <div class= "flex-1 bg-white text-black rounded-full py-2 px-4"><input placeholder="Search the website"/></div>
+            <a href="https://marketing.org.nz/contact-us" target="_blank" class="redShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative overflow-hidden px-4 py-2 group rounded-full bg-white text-red-600">
+               <div class="absolute top-0 right-full w-full h-full bg-red-500 opacity-25 group-hover:translate-x-full z-0 duration-400">
+               </div>
+               <h4 class="relative z-9">&rarr; Search  &larr;</h4>
+            </a>
+         </div>
+
+         
          <div class="relative shadow-2xl grid place-items-center">
             <img src="/blog-image.webp" class="object-cover z-[2] max-h-[50vh]" alt="">
          </div>
@@ -30,20 +35,6 @@
    </section>
 
    <section id="events" class="py-15 lg:py-25 flex flex-col gap-20">
-      <div class="flex flex-col gap-3 text-center" >
-         <h5 class="text-lg sm:text-xl md:text-2xl">
-            Events
-         </h5>
-
-         <h3 class="font-bold text-2xl sm:text-3xl md:text-4xl">Upcoming Events</h3>
-
-         
-
-      </div>
-      <a href="https://marketing.org.nz/up-coming-events" target="_blank" class="mx-auto px-3 py-1 rounded-md border border-solid border-white flex items-center gap-3 -mb-5 sm:-mb-0 -mt-10 hover:border-red-600 duration-300">
-            <i class="fa-regular fa-calendar-days" style="color: #fff"></i>
-            <p>Marketing Events</p>
-      </a>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-8">
          <Step step={steps[0]}>
@@ -65,6 +56,22 @@
 
          </Step>
       </div>
+      <div class="flex flex-col gap-3 text-center" >
+         <h5 class="text-lg sm:text-xl md:text-2xl">
+            Events
+         </h5>
+
+         <h3 class="font-bold text-2xl sm:text-3xl md:text-4xl">Upcoming Events</h3>
+
+         
+
+      </div>
+      <a href="https://marketing.org.nz/up-coming-events" target="_blank" class="mx-auto px-3 py-1 rounded-md border border-solid border-white flex items-center gap-3 -mb-5 sm:-mb-0 -mt-10 hover:border-red-600 duration-300">
+            <i class="fa-regular fa-calendar-days" style="color: #fff"></i>
+            <p>Marketing Events</p>
+      </a>
+
+      
 
    </section>
 

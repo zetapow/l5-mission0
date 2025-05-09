@@ -7,7 +7,11 @@
       <i class={step.icon}></i>
    </div>
 
-   <h3 class="font-medium text-2xl sm:text-3xl" >{step.name}</h3>
+   <div class="flex flex-col">   
+      <h3 class="font-medium text-2xl sm:text-3xl" >{step.name}</h3>
+      <img src={step.src} class="object-center m-5" alt="">
+   </div>
+
    <slot/>
    <div class="flex-1 flex justify-between gap-2 items-center">
       <div class="ml-auto cursor-pointer hover:text-red-800 duration-300 relative after:absolute after:top-0  after:right-full after:w-full after:h-full after:duration-300 hover:after:translate-x-full after:z-[-1] overflow-hidden after:bg-white">

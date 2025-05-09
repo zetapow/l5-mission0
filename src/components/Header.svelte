@@ -1,6 +1,4 @@
 <script>
-   export let y;
-
    let links = [
       {name: 'Events', link: '#events'},
       {name: 'About Us', link: '#about'},
@@ -9,7 +7,7 @@
 
 </script>
 
-<header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border-solid ' + (y > 0 ?  " py-6 bg-transparent border-transparent" :"py-4 bg-gray-700 border-b-pink-900")}>
+<header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border-solid '}>
 <!-- <header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border-solid ' + (y > 0 ? "py-4 bg-gray-900 border-b-pink-900": " py-6 bg-transparent border-transparent")}> -->
 
    <h1 class="font-medium" >
