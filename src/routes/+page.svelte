@@ -8,8 +8,8 @@
 
 
 
-<h1 class="text-2xl font-bold hover:underline">Hello World</h1>
-<p class="text-red-500">Visit <a class="text-blue-700" href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<!-- <h1 class="text-2xl font-bold hover:underline">Hello World</h1>
+<p class="text-red-500">Visit <a class="text-blue-700" href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p> -->
 <Main/>
 
 <!-- <style lang="postcss">
