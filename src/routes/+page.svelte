@@ -6,6 +6,10 @@
    <title>Marketing Association</title>
 </svelte:head>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+
 
 
 <!-- <h1 class="text-2xl font-bold hover:underline">Hello World</h1>

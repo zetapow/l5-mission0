@@ -4,6 +4,9 @@
    import Header from "../components/Header.svelte";
    import Footer from "../components/Footer.svelte"
 
+   import '@fortawesome/fontawesome-free/css/all.min.css'
+
+
 
 function returnTop(){
    document.body.scrollIntoView()
