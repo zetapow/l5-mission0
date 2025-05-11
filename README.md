@@ -15,6 +15,34 @@ This repository contains a single page, mobile responsive website prototype for 
 Netlify
 https://l5-mission-0.netlify.app/
 
+## Folder Structure
+```
+my-svelte-app/
+├── images/
+│   ├── mobile.png             # Git Screenshot
+├── src/
+│   ├── app.css                # Import TailwindCSS
+│   ├── app.html               # Linking Google fonts and Font Awesome Icons
+│   ├── components/            # Svelte components
+│   │   ├── Footer.svelte
+│   │   ├── Header.svelte
+│   │   └── Main.svelte
+│   │   └── Step.svelte
+│   ├── lib/                 
+│   │   ├── index.js
+│   ├── routes/                # Svelte stores
+│   │   ├── +layout.svelte
+│   │   └── +page.svelte
+│   ├── static/                # Images used for the website
+│   │   ├── blog-image.webp
+│   │   ├── favicon.png
+│   │   └── ...
+├── svelte.config.js           # configuring Netlify adapter
+├── vite.config.js             # enabling TailwindCSS
+├── package.json
+└── README.md
+
+```
 <!-- CONTACT -->
 
 ## Contact
